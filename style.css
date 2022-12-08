@@ -1,0 +1,229 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    /* hyphens: auto; */
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*//////////////////////////////////////////////
+  //////////////////////////////////////////////*/
+  
+  .wholeThing {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+/*//// SIDEBAR ////*/
+  .sidebar {
+    grid-column: 1 / 1;
+    background-color: #4590CF;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .sidebar .top-group div, .dashboard, .bottom-group div {
+    display: flex;
+    gap: .75rem;
+  }
+
+  .dashboard {
+    font-size: 1.5rem;
+  }
+
+  .top-group, .bottom-group {
+    display: grid;
+    gap: .75rem;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+
+/*//// MAIN BODY ////*/
+  .body-section {
+    display: grid;
+  }
+
+
+/*//// HEADER ////*/
+  header {
+    grid-column: 2 / 3;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: .75rem 1.5rem;
+    box-shadow: 0px 5px #888888;
+  }
+
+  header .first-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
+
+  header .second-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .second-row .button-block {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .first-row input {
+    margin-right: auto;
+    flex-basis: 50%;
+    border-radius: 16px;
+    background-color: #DEE5EE;
+    border: none;
+  }
+
+  .second-row .name {
+    margin-right: auto;
+  }
+
+  .name p {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+
+  /*//// BUTTONS //////*/
+  .search {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .catavatar {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .button-block button {
+    background-color: #4590CF;
+    color: #FFFFFF;
+    border-radius: 16px;
+    padding: 7px 30px;
+    border: none;
+    box-shadow: 1px 1px #888888;
+  }
+
+
+/*//// MAIN CONTENT ////*/
+  .main-section {
+    background-color: #E3E8EF;
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template-columns: 3fr 1fr;
+    padding: 2rem 2rem;
+    gap: 1rem;
+  }
+
+  .projects {
+    background-color: #E4E8EE;
+    display: grid;
+    grid-auto-rows: auto;
+    /* gap: 1.5rem;  */
+  }
+
+  .card-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    min-height: 200px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 1px 7px #9ca3af;
+    border-radius: 10px;
+    border-left: 8px solid #EEAB26;
+    font-size: .9rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card .icons {
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+  }
+
+  .card p {
+    font-weight: 100;
+  }
+
+
+  /*////// RIGHT SIDE COLUMN ///////*/
+
+  .right-side {
+    display: grid;
+    grid-auto-rows: auto;
+  }
+
+  .announcements .card, .trending .card {
+    border-left: none;
+  }
+
+  .announcements .card div {
+    border-bottom: 1px solid #E3E8EF;
+    /* padding: .5rem 0rem; */
+  }
+
+  .announcements .card p {
+    font-size: .8rem;
+  }
+
+  .trending .card {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .trending .card div {
+    display: flex;
+  }
+
+  .trending .card img {
+    height: 3rem;
+    width: 3rem;
+  }
+
