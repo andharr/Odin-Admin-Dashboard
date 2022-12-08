@@ -202,11 +202,11 @@
 
   .announcements .card, .trending .card {
     border-left: none;
+    padding: 1.5rem;
   }
 
   .announcements .card div {
     border-bottom: 1px solid #E3E8EF;
-    /* padding: .5rem 0rem; */
   }
 
   .announcements .card p {
