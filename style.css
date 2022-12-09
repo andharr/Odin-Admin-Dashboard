@@ -85,7 +85,8 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: .75rem 1.5rem;
-    box-shadow: 0px 5px #888888;
+    box-shadow: 0px 2px 2px 2px rgb(175, 175, 175);
+    position: relative;
   }
 
   header .first-row {
@@ -159,7 +160,6 @@
     background-color: #E4E8EE;
     display: grid;
     grid-auto-rows: auto;
-    /* gap: 1.5rem;  */
   }
 
   .card-block {
@@ -216,10 +216,12 @@
   .trending .card {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    gap: .5rem;
   }
 
   .trending .card div {
     display: flex;
+    gap: .5rem;
   }
 
   .trending .card img {
